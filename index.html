@@ -27,34 +27,83 @@
 	<!-- <link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet/less" href="cake.less">
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+	<style media="screen">
+		.con{
+			width: 400px;
+			height: 80%;
+			position: absolute;
+			transform: translate(-50%,-50%);
+			top: 50%;
+			left: 50%;
+			overflow: hidden;
+			border: 10px solid #ffffff;
+			border-radius: 8px;
+			box-shadow: 10px 25px 30px rgba(0,0,0,0.3);
+		}
+		.wra{
+			width: 100%;
+			display: flex;
+			animation: slide 16s infinite;
+		}
+		@keyframes slide{
+			0%{
+				transform: translateX(0);
+			}
+			25%{
+				transform: translateX(0);
+			}
+			30%{
+				transform: translateX(-100%);
+			}
+			50%{
+				transform: translateX(-100%);
+			}
+			55%{
+				transform: translateX(-200%);
+			}
+			75%{
+				transform: translateX(-200%);
+			}
+			80%{
+				transform: translateX(-300%);
+			}
+			100%{
+				transform: translateX(-300%);
+			}
+		}
+		img{
+			width: 100%;
+		}
+			</style>
 </head>
 
 <body>
+	
 	<div class="loading"></div>
 	<audio class="song" controls loop>
         <source src="hbd.mp3"></source>
 	   Your browser isn't invited for super fun audio time.
     </audio>
     <div class="balloons text-center" id="b1">
-    	<h2 style="color:#F2B300;">></h2>
+    	<h2 style="color:#F2B300;">H</h2>
     </div>
     <div class="balloons text-center" id="b2">
-    	<h2 style="color:#0719D4;">></h2>
+    	<h2 style="color:#0719D4;">B</h2>
     </div>
 	<div class="balloons text-center" id="b3">
-    	<h2 style="color:#D14D39;">M</h2>
+    	<h2 style="color:#D14D39;">D</h2>
     </div>
 	<div class="balloons text-center" id="b4">
-    	<h2 style="color:#8FAD00;">.</h2>
+    	<h2 style="color:#8FAD00;">X</h2>
     </div>
 	<div class="balloons text-center" id="b5">
-    	<h2 style="color:#8377E4;">S</h2>
+    	<h2 style="color:#8377E4;">O</h2>
     </div>
     <div class="balloons text-center" id="b6">
-    	<h2 style="color:#99C96A;"><</h2>
+    	<h2 style="color:#99C96A;">L</h2>
     </div>
     <div class="balloons text-center" id="b7">
-    	<h2 style="color:#20CFB4;"><</h2>
+    	<h2 style="color:#20CFB4;">A</h2>
     </div>
 
     <img src="Balloon-Border.png" width="100%" class="balloon-border">
@@ -83,8 +132,15 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12 text-center">
-				<img src="banner.png" class="bannar">
+			<div class="con">
+				<div class="wra">
+					<img src="lan8.jpg" alt="">
+					<!-- <img src="lan9.jpg" alt=""> -->
+					<img src="lan10.jpg" alt="">
+					<img src="lan11.jpg" alt="">
+					<img src="lan12.jpg" alt="">
+					<img src="lan13.jpg" alt="">
+				</div>
 			</div>
 		</div>
 		<div class="row cake-cover">
@@ -104,49 +160,66 @@
 		</div>
 		<div class="row message">
 			<div class="col-md-12">
-				<p>Hari ini...</p>
-				<p>seindah hari-hari lainnya</p>
-				<p>tapi kamu sadar tidak</p>
-				<p>satu tahun telah berlalu</p>
-				<p>dalam sekejap mata</p>
-				<p><strong>Namun</strong></p>
-				<p>Apakah kamu tahu..?</p>
-				<p>hari ini</p>
-				<p>begitu spesial untukmu</p>
-				<p>saya ingin</p>
-				<p>merayakan ulang tahun mu...</p>
-				<p>bersama dengan mu</p>
-				<p>tapi apalah daya ku</p>
-				<p>saya cuma bisa berdoa</p>
-				<p>agar, diusia mu yang ke 22 tahun ini...</p>
-				<p>kamu semakin dewasa</p>
-				<p>dan tetap</p>
-				<p>seperti Marlani yg saya kenal</p>
-				<p>takut akan Tuhan</p>
-				<p>baik...</p>
-				<p>dan</p>
-				<p>dan</p>
-				<p>dan</p>
-				<p>tidak tahu, wkwk</p>
-				<p>Intinya Selamat Ulang Tahun bos ku</p>
-				<p>Tuhan Yesus Memberkati mu</p>
+				<p>Today is...</p>
+				<p>as beautiful as other days</p>
+				<p>but you realize</p>
+				<p>another year has gone</p>
+				<p>in a blink of the eyes</p>
+				<p><strong>however</strong></p>
+				<p>Do you know..?</p>
+				<p>today is just special</p>
+				<p>so special to you</p>
+				<p>that's why</p>
+				<p>Let's make it...</p>
+				<p>the best celebration ever</p>
+				<p>and let me share...</p>
+				<p>a piece of happiness to you</p>
+				<p>I made all this...</p>
+				<p>as a birthday present to you</p>
+				<p>thanks for being there</p>
+				<p>thanks for the friendship we made</p>
+				<p>thanks for everything</p>
+				<p>I wish you all the best</p>
+				<p>May your life be at ease</p>
+				<p>May all your wishes come true</p>
+				<p>Remember</p>
+				<p>your ambitions</p>
+				<p>you live as a free bird...</p>
+				<p>flying in the blue sky</p>
+				<p>Now things are different...</p>
+				<p>real story of your life</p>
+				<p>is just about to begin</p>
+				<p>indeed..</p>
+				<p>but...</p>
+				<p>don't worry</p>
+				<p>because...</p>
+				<p>God has your back</p>
+				<p>and</p>
+				<p>this year will be better</p>
+				<p>and I hope</p>
+				<p>you'll find...</p>
+				<p>happiness along the way</p>
+				<p>keep your spirit up</p>
+				<p>enjoy every single moment...</p>
+				<p>that you experience today</p>
+				<p>fill it with your most beautiful smile</p>
+				<p>and make it the best memory..</p>
+				<p>lastly...</p>
+				<p>I'd like to wish you one more time</p>
+				<p>a very happy birthday Xola Mathembisa</p>
 			</div>
-			<!-- <div>
-				<a href="index2.html"><button>Lanjut</button></a>
-			</div> -->
 		</div>
-		
 		<div class="navbar navbar-fixed-bottom">
 			<div class="row">
 				<div class="col-md-6 text-center col-md-offset-3">
 					<button class="btn btn-primary" id="turn_on">Nyalakan Lampu</button>
-					<button class="btn btn-primary" id="play">Jalankan Musik</button>
-					<button class="btn btn-primary" id="bannar_coming">Silahkan Menghias</button>
-					<button class="btn btn-primary" id="balloons_flying">Lanjut</button>
-					<button class="btn btn-primary" id="cake_fadein">Kue Paling Lezat Yang Pernah Ada</button>
-					<button class="btn btn-primary" id="light_candle"> Nyalakan Lilin</button>
-					<button class="btn btn-primary" id="wish_message">Selamat ulang tahun</button>
-					<button class="btn btn-primary" id="story">Pesan untukmu</button>
+					<button class="btn btn-primary" id="play">Jalan Musik</button>
+					<button class="btn btn-primary" id="bannar_coming">HBD BOS</button> 
+					<!-- <p>Akhirnya sama kita :)</p> -->
+					<!-- <button class="btn btn-primary" id="cake_fadein">Most Delicious Cake Ever</button>
+					<button class="btn btn-primary" id="light_candle"> Light Candle</button>
+					<button class="btn btn-primary" id="wish_message">Happy Birthday</button>
+					<button class="btn btn-primary" id="story">A mesage for you</button> -->
 					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
 				</div>
 			</div>
@@ -161,6 +234,8 @@
 			<div class="col-md-2">
 			</div> -->
 		</div>
+
+
 	</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
